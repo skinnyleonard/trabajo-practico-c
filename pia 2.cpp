@@ -20,10 +20,17 @@ static void ejercicio1(){
         }
     }
     for(i=0; i<n; i++){
-        // incremento = incremento + 2;
+        incremento = incremento + 2;
         for(j=0; j<m; j++){
-            matriz[2][j] = sqrt2;
-            printf("%d ", matriz[i][j]);
+            matriz[i][2] = sqrt2;
+            matriz[i][4] = sqrt2;
+            matriz[i][6] = sqrt2;
+            matriz[i][8] = sqrt2;
+        }
+    }
+    for(i=0; i<m; i++){
+        for(j=0; j<n; j++){
+            printf("%d ",matriz[i][j]);
         }
         printf("\n");
     }
