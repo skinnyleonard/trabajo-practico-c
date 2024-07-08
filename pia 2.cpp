@@ -7,7 +7,7 @@ static void ejercicio1(){
     srand(time(NULL));
     
     int matriz[10][6];
-    int i=0, j=0, n=10, m=6, random=0, sqrt2, sqrt3;
+    int i=0, j=0, n=10, m=6, random=0, sqrt2, sqrt3, incremento=0;
     
     random = rand() % (10 - 0);
     
@@ -21,7 +21,8 @@ static void ejercicio1(){
     }
     for(i=0; i<n; i++){
         for(j=0; j<m; j++){
-            matriz[i][j] = sqrt2;
+            incremento = incremento + 2;
+            matriz[incremento][j] = sqrt2;
             printf("%d ", matriz[i][j]);
         }
         printf("\n");
@@ -42,12 +43,12 @@ static void ejercicio2(){
     }
     for(i=0; i<m; i++){
         for(j=0; j<n; j++){
-            printf("%d ",matriz[i][j]);
+            printf(" %d ",matriz[i][j]);
         }
         printf("\n");
     }
 }
 
 int main(){
-    ejercicio2();
+    ejercicio1();
 }
